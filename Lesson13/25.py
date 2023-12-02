@@ -8,7 +8,7 @@ for i in range(0, len(login)):
 for b in range(0,len(password)):
     if  password[b] == "@":
         passw = True
-if login and passw == True:
+if login and passw:
     print("Да")
-elif passw or login == False:
+else:
     print("Нет")
