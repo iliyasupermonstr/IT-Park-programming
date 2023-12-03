@@ -1,6 +1,8 @@
+count = 0
 while True:
-    num = int(input("Введите число:"))
-    if num % 10 == 0:
-        print(num)
-    if num % 10 != 0:
+    str = input("Введите строку:")
+    if str != "стоп":
+        count += 1
+    elif str == "стоп":
+        print("Было введено ",count," Строк(-и)")
         break

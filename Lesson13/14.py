@@ -1,8 +1,6 @@
-def nums(n):
-    for i in range(0,n+1):
-        print(i)
-    print("_________________________")
-    for b in range(n,-1,-1):
-        print(b)
-num = int(input("Введите число"))
-nums(num)
+def per(R):
+    π = 3.14159
+    S = π * pow(R,2)
+    print("Периметр окружности ", S)
+Rad = int(input("Введите радиус окружности:"))
+per(Rad)
