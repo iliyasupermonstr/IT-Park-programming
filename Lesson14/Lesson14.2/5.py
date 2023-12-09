@@ -9,4 +9,3 @@ while True:
     else:
          cost_fin += cost
          count += 1
-print(int(cost_fin))

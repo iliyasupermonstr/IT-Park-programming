@@ -3,4 +3,5 @@ def task7(num):
     for i in range(2,num+1,1):
         factorial *= i 
     print(factorial)
-task7(5)
+n = int(input("Введите число:"))
+task7(n)
