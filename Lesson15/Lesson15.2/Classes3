@@ -1,0 +1,8 @@
+class Car:
+    def sound(self):
+        print("beep")
+    def long_sound(self):
+        print("beep-beep")
+a = Car()
+a.sound()
+a.long_sound()
