@@ -4,10 +4,12 @@ win = pygame.display.set_mode((500, 500))
 rad = int(input("Введите радиус круга"))
 x = 250
 y = 250
+speed = 50
 center_x = 250
 center_y = 250
 color = (255, 255, 255)
-BLUE = (33,150,243)
+circ_color = (33,150,243)
+
 moving = False
 win.fill(color)
 while True:
@@ -39,8 +41,14 @@ while True:
     if moving:
         x += (center_x - x) // 20
         y += (center_y - y) // 20
-
+    
+    if x >= center_x +150 or x <= center_x - 150 or y >= center_y+150 or y <= center_y-150:
+        circ_color = (255,0,0)
+        speed = 75
+    else:
+        circ_color = (0,0,255)
+        speed = 50
     win.fill(color)
-    pygame.draw.circle(win,BLUE,(x,y),rad)
+    pygame.draw.circle(win,circ_color,(x,y),rad)
     pygame.display.update()
-    pygame.time.delay(50)
+    pygame.time.delay(speed)
