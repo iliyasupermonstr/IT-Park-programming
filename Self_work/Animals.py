@@ -39,3 +39,5 @@ Sherlok.go()
 
 Frankenstein = Dog(brain = CatBrain())
 Frankenstein.say()
+Frankenstein.go()
+
