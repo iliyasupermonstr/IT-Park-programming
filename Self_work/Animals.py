@@ -20,11 +20,13 @@ class CatBrain():
     def say(self):
         print("Mew")
 
-class FrankensteinBrain():
+class FrankensteinBrain:
+    def __init__(self, brains):
+        self.brains = brains
     def say(self):
-        print("Гав-Гав")
-        print("Мяу")
-
+        for brain in self.brains:
+            brain.say()
+        
 class Cat(Animal):
     def __init__(self,brain = CatBrain()):
         super().__init__(brain)
@@ -34,16 +36,16 @@ class Dog(Animal):
         super().__init__(brain)
 
 
-# Leona = Cat()
-# Leona.say()
-# Leona.go()
+Leona = Cat()
+Leona.say()
+Leona.go()
 
 
-# Sherlok = Dog()
-# Sherlok.say()
-# Sherlok.go()
+Sherlok = Dog()
+Sherlok.say()
+Sherlok.go()
 
-Frankenstein = Dog(brain = FrankensteinBrain())
+Frankenstein = Dog(brain = FrankensteinBrain([DogBrain(),CatBrain()]))
 Frankenstein.say()
 Frankenstein.go()
 
