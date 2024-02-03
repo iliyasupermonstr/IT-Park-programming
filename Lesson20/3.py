@@ -26,6 +26,7 @@ win = pg.display.set_mode(size)
 # circles = []
 # for i in range(100):
 #     circles.append(Circle(W // 2,H // 2,50))
+
     
 def load_image(Photo):
     img = pg.image.load(Photo)
@@ -45,6 +46,18 @@ for i in range(100):
 
     sprite.rect.x = random.randrange(W)
     sprite.rect.y = random.randrange(H)
+
+class Inginirium(pg.sprite.Sprite):
+    def __init__(self,*group):
+        super().__init__(*group)
+        self.image = load_image(*group)
+        self.image = pg.transform.scale(self.image,(100,100))
+        self.rect = self.image.get_rect()
+        self.rect.x = random.randrange(W)
+        self.rect.y = random.randrange(H)
+    def update(self):
+        self.rect = self.rect.move(random.randrange(3)-1,
+                                   random.randrange(3)-1)
 while True:
     for i in pg.event.get():
         if i.type == pg.QUIT:
