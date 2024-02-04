@@ -7,7 +7,7 @@ SIGNAL_FILE = "/Users/iliyabezrukov/projects/It-Park Course/Lesson21/Alarm/Nubik
 
 def run_signal(repeat_counts):
     for i in range(repeat_counts):
-        playsound.playsound(SIGNAL_FILE)
+        playsound(SIGNAL_FILE)
 def is_wake_up(target_time: time) -> bool:
     while True:
         time_value = datetime.now().time()
@@ -17,8 +17,7 @@ def is_wake_up(target_time: time) -> bool:
             break
 
         sleep(CLOCK_INTERVAL_SEC)
-need_time = time(19
-                 , 55,30)
+need_time = time(18,10,30)
 is_wake_up(target_time=need_time)
 print("Wake Up!")
-run_signal()
+run_signal(5)
