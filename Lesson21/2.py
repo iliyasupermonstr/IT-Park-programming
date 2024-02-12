@@ -1,4 +1,4 @@
-TEXT = "пhhтрамаааааааап"
+TEXT = "пhhтрп"
 seen = {}
 
 for i in TEXT:
