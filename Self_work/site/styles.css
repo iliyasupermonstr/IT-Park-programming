@@ -1,0 +1,107 @@
+/* Стили для навигационного меню */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Стили для основного содержимого */
+section {
+    padding: 50px 20px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+/* Стили для кнопки */
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Стили для футера */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Дополнительные стили для раздела "Видео" */
+#videos {
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+/* Дополнительные стили для раздела "Мерч" */
+#merch {
+    background-color: #fafafa;
+    padding: 20px;
+}
+
+/* Дополнительные стили для раздела "Контакты" */
+#contact {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+/* Стили для фотографии последнего видео */
+#home img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+/* Стили для надписи "Смотреть новое видео" */
+#home p {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+header {
+    background-color: #f0f0f0; /* Цвет фона верхнего блока */
+    padding: 20px; /* Внутренние отступы верхнего блока */
+}
+
+header img {
+    display: block;
+    margin: 0 auto; /* Центрирование изображения */
+    max-width: 100%; /* Сделать изображение адаптивным */
+}
+header {
+    height: 200px; /* Установка высоты в 80 пикселей */
+    width: 100%; /* Установка ширины на 100% ширины родительского контейнера */
+    padding: 10px 20px; /* Установка внутренних отступов в 10 пикселей сверху и снизу, и 20 пикселей слева и справа */
+    margin-bottom: 20px; /* Установка внешнего отступа снизу на 20 пикселей */
+}
