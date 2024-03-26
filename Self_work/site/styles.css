@@ -49,14 +49,13 @@ button a {
 
 /* Стили для футера */
 footer {
-    background-color: #333;
-    color: white;
     text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    padding: 20px 0;
+    background-color: #000; /* Изменяем цвет фона на черный (#000) */
+    color: #fff; /* Устанавливаем белый цвет текста */
+    position: static;
 }
+
 
 /* Дополнительные стили для раздела "Видео" */
 #videos {
@@ -104,4 +103,9 @@ header {
     width: 100%; /* Установка ширины на 100% ширины родительского контейнера */
     padding: 10px 20px; /* Установка внутренних отступов в 10 пикселей сверху и снизу, и 20 пикселей слева и справа */
     margin-bottom: 20px; /* Установка внешнего отступа снизу на 20 пикселей */
+}
+.center {
+    text-align: center;
+    font-family: Arial, sans-serif; /* Выберите желаемый шрифт */
+    font-size: 50px; /* Установите желаемый размер шрифта */
 }

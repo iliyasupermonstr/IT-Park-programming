@@ -4,12 +4,127 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Всёснимающий Рамиль</title>
+    <link rel="icon" type="image" href="path/to/favicon.ico">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            /* Добавляем отступ внизу страницы */
+            margin-bottom: 100px;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #f0f0f0;
+        }
+
+        nav {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        section#home {
+            text-align: center;
+            padding: 50px 20px; /* уменьшаем вертикальный отступ */
+            max-width: 800px; /* добавляем максимальную ширину контейнера */
+            margin: 0 auto; /* центрируем контейнер */
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .video-grid {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .video-grid iframe {
+            width: 100%;
+            height: auto;
+            max-width: 560px; /* Ограничиваем максимальную ширину */
+            margin-bottom: 20px;
+        }
+
+        .social-links {
+            margin-top: 20px; /* добавляем отступ сверху */
+            display: flex; /* устанавливаем flex-контейнер */
+            justify-content: space-between; /* распределяем элементы по ширине контейнера */
+            overflow: auto; /* добавляем возможность прокрутки */
+            padding: 0 20px; /* добавляем отступы справа и слева */
+        }
+
+        .social-links button {
+            background-color: #007bff; /* синий цвет */
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .social-links button:last-child {
+            margin-left: auto; /* помещаем последнюю кнопку вправо */
+            background-color: #dc3545; /* красный цвет */
+        }
+
+        .social-links button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #f0f0f0;
+            /* Убираем фиксированное позиционирование */
+            position: static;
+        }
+
+        footer button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        footer button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
+
 <header>
     <img src="Contact us RU fixed project Front.jpg" alt="Логотип" width="300" height="200">
-   </header>
+</header>
+
 <nav>
     <ul>
         <li><a href="index.html">Главная</a></li>
@@ -22,19 +137,19 @@
 <section id="home">
     <h1>Добро пожаловать на сайт Всёснимающего Рамиля</h1>
     <div class="video-grid">
-        <!-- Последние видео -->
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/zKUfGn-mrNk?si=WEJP56VsD2g9NYJr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <p><h2>У Рамиля вышло новое видео!</h2></p>
+        <!-- Последнее видео -->
+        <iframe width="560" src="https://www.youtube.com/embed/zKUfGn-mrNk?si=WEJP56VsD2g9NYJr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <p><strong>У Рамиля вышло новое видео!</strong></p>
     </div>
-    <button><a href="https://www.youtube.com/@user-rk4ft7nw7e">Подписаться на канал</a></button>
     <div class="social-links">
         <!-- Ссылки на социальные сети -->
+        <button><a href="https://www.youtube.com/@user-rk4ft7nw7e">YouTube</a></button>
         <button><a href="https://t.me/vsesni">Телеграм</a></button>
     </div>
 </section>
 
 <footer>
-    <button><a href="https://www.youtube.com/@user-rk4ft7nw7e">Подпишись,чтобы поддержать автора!</a></button>
+    <button><a href="https://www.youtube.com/@user-rk4ft7nw7e">Подпишись, чтобы поддержать автора!</a></button>
 </footer>
 
 </body>
