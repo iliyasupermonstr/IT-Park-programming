@@ -1,6 +1,9 @@
 import sys
-from PyQt5.QtCore import Qt
+from PyQt5.QtCore import pyqtSignal, QObject
 from PyQt5.QtWidgets import QMainWindow, QPushButton, QApplication
+
+class Communicate(QObject):
+    close_app = pyqtSignal()
 
 class Example(QMainWindow):
     def __init__(self):
