@@ -35,7 +35,7 @@ def load_image(Photo):
     img.set_colorkey(colorkey)
     return img
 
-img = load_image("/Users/iliyabezrukov/projects/It-Park Course/Lesson20/Mister_pig.png")
+img = load_image("/Users/iliyabezrukov/projects/It-Park-programming/Lesson20/Mister_pig.png")
 img = pg.transform.scale(img,(100,100))
 all_sprites = pg.sprite.Group()
 
